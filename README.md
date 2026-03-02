@@ -1,7 +1,6 @@
 # CUDA-Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation
 
-Project page: [CUDA-Agent.github.io](https://cuda-agent.github.io/)
-[![Paper](https://img.shields.io/badge/paper-5f16a8?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2503.14476)
+[![Paper](https://img.shields.io/badge/paper-5f16a8?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.24286)
 [![Project Page](https://img.shields.io/badge/Blog-3858bf?style=for-the-badge&logo=homepage&logoColor=white)](https://cuda-agent.github.io/)
 [![Dataset: CUDA-Agent-Ops-6K](https://img.shields.io/badge/Datasets-4d8cd8?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/BytedTsinghua-SIA/CUDA-Agent-Ops-6K)
 ## 1. Project Overview

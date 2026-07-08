@@ -1,0 +1,160 @@
+✓ Initialized. View run at https://modal.com/apps/hanlinfax/main/ap-N9Ghc3wKrnpHPSUuBAf446
+✓ Created objects.
+├── 🔨 Created mount /opt/tiger/CUDA-Agent/flashinfer_contest_results/moe/fp8/run_modal_official_cli.py
+├── 🔨 Created mount /opt/tiger/CUDA-Agent/flashinfer_contest_results/moe/fp8/kernel_ako4x_iter4.py
+├── 🔨 Created mount /opt/tiger/CUDA-Agent/flashinfer_contest_results/moe/fp8/kernel.py
+├── 🔨 Created mount /opt/tiger/CUDA-Agent/flashinfer_contest_results/moe/fp8/contest_data
+├── 🔨 Created function probe_env.
+└── 🔨 Created function run_official_cli.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.2.0
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+running: flashinfer-bench run --local /tmp/moe_fp8_official_cli_dataset --definitions moe_fp8_block_scale_ds_routing_topk8_ng8_kg4_e32_h7168_i2048 --solutions ako4x_moe_fp8_iter4 flashinfer_wrapper_9sdjf3 --save-results --use-isolated-runner --log-level INFO --resume --timeout 900 --warmup-runs 10 --iterations 50 --num-trials 3 --atol 1 --rtol 0.3 --required-matched-ratio 0.9
+[15:04:17] INFO flashinfer_bench.bench.runner.isolated_runner: Initialized benchmark multi-process on 1 CUDA devices and 1 workers
+[15:04:17] INFO flashinfer_bench.cli.main: Running benchmark on FlashInfer Trace Dataset: /tmp/moe_fp8_official_cli_dataset
+[15:04:17] INFO flashinfer_bench.cli.main: Resume mode enabled: will skip already evaluated solutions
+[15:04:17] INFO flashinfer_bench.bench.benchmark: Processing definition: moe_fp8_block_scale_ds_routing_topk8_ng8_kg4_e32_h7168_i2048 with 2 solutions
+[heartbeat] still running; no output for 30s
+[heartbeat] still running; no output for 60s
+[heartbeat] still running; no output for 90s
+[heartbeat] still running; no output for 120s
+[heartbeat] still running; no output for 150s
+[heartbeat] still running; no output for 180s
+[heartbeat] still running; no output for 210s
+[heartbeat] still running; no output for 240s
+[heartbeat] still running; no output for 270s
+[heartbeat] still running; no output for 300s
+[heartbeat] still running; no output for 330s
+[heartbeat] still running; no output for 360s
+[heartbeat] still running; no output for 390s
+[heartbeat] still running; no output for 420s
+[heartbeat] still running; no output for 450s
+[heartbeat] still running; no output for 480s
+[heartbeat] still running; no output for 510s
+[heartbeat] still running; no output for 540s
+[heartbeat] still running; no output for 570s
+[heartbeat] still running; no output for 600s
+[heartbeat] still running; no output for 630s
+[heartbeat] still running; no output for 660s
+[heartbeat] still running; no output for 690s
+[heartbeat] still running; no output for 720s
+[heartbeat] still running; no output for 750s
+[heartbeat] still running; no output for 780s
+[heartbeat] still running; no output for 810s
+[heartbeat] still running; no output for 840s
+[heartbeat] still running; no output for 870s
+[15:19:06] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload b8f4f012-a32e-4356-b4e1-7665b3d598af: PASSED with 146.34x speedup vs. mathematical reference
+[15:19:06] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload b8f4f012-a32e-4356-b4e1-7665b3d598af: PASSED with 54.17x speedup vs. mathematical reference
+[15:19:19] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload e05c6c03-5603-4a1c-b34c-dcce0ecaeea4: PASSED with 61.47x speedup vs. mathematical reference
+[15:19:19] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload e05c6c03-5603-4a1c-b34c-dcce0ecaeea4: PASSED with 57.47x speedup vs. mathematical reference
+[15:19:35] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 6230e838-67ca-41dd-a9d6-6f36b7676c6b: PASSED with 86.93x speedup vs. mathematical reference
+[15:19:35] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 6230e838-67ca-41dd-a9d6-6f36b7676c6b: PASSED with 47.67x speedup vs. mathematical reference
+[15:19:52] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 8f1ff9f1-6747-41d1-a1d8-2868cdacf893: PASSED with 74.53x speedup vs. mathematical reference
+[15:19:52] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 8f1ff9f1-6747-41d1-a1d8-2868cdacf893: PASSED with 45.89x speedup vs. mathematical reference
+[15:20:10] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 1a4c6ba1-3cd2-4d7d-b716-84f2d52b69fc: PASSED with 61.63x speedup vs. mathematical reference
+[15:20:10] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 1a4c6ba1-3cd2-4d7d-b716-84f2d52b69fc: PASSED with 42.85x speedup vs. mathematical reference
+[15:20:24] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload a7c2bcfd-a2f4-479e-8d32-200115df89cf: PASSED with 111.11x speedup vs. mathematical reference
+[15:20:24] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload a7c2bcfd-a2f4-479e-8d32-200115df89cf: PASSED with 51.10x speedup vs. mathematical reference
+[15:20:38] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 2e69caee-ae5c-473b-aa99-5dc6659829d4: PASSED with 153.95x speedup vs. mathematical reference
+[15:20:38] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 2e69caee-ae5c-473b-aa99-5dc6659829d4: PASSED with 53.39x speedup vs. mathematical reference
+[15:20:52] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 8cba5890-4288-448a-93b8-42c14c6b9420: PASSED with 115.14x speedup vs. mathematical reference
+[15:20:52] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 8cba5890-4288-448a-93b8-42c14c6b9420: PASSED with 51.28x speedup vs. mathematical reference
+[15:21:18] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 5e8dc11c-f2a9-42d5-8dce-9419cbf34d5d: PASSED with 21.35x speedup vs. mathematical reference
+[15:21:18] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 5e8dc11c-f2a9-42d5-8dce-9419cbf34d5d: PASSED with 18.94x speedup vs. mathematical reference
+[15:21:40] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 58a34f27-7995-4155-8b46-f60a7225e20e: PASSED with 22.82x speedup vs. mathematical reference
+[15:21:40] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 58a34f27-7995-4155-8b46-f60a7225e20e: PASSED with 20.16x speedup vs. mathematical reference
+[15:21:56] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 5eadab1e-a0e3-4966-b0fd-1115cd77497c: PASSED with 90.05x speedup vs. mathematical reference
+[15:21:56] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 5eadab1e-a0e3-4966-b0fd-1115cd77497c: PASSED with 47.91x speedup vs. mathematical reference
+[15:22:11] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload eedc63b2-c03b-4cf2-8d16-1f46566e3af7: PASSED with 88.97x speedup vs. mathematical reference
+[15:22:11] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload eedc63b2-c03b-4cf2-8d16-1f46566e3af7: PASSED with 48.25x speedup vs. mathematical reference
+[15:22:28] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload e626d3e6-6c29-4fd8-bb7c-5b09eec61702: PASSED with 79.86x speedup vs. mathematical reference
+[15:22:28] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload e626d3e6-6c29-4fd8-bb7c-5b09eec61702: PASSED with 47.62x speedup vs. mathematical reference
+[15:22:44] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 74d7ff04-0365-4cf8-a824-ce61b7131dea: PASSED with 81.18x speedup vs. mathematical reference
+[15:22:44] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 74d7ff04-0365-4cf8-a824-ce61b7131dea: PASSED with 47.24x speedup vs. mathematical reference
+[15:23:01] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 4822167c-dae5-4bb1-bb53-e4adb256245b: PASSED with 79.50x speedup vs. mathematical reference
+[15:23:01] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 4822167c-dae5-4bb1-bb53-e4adb256245b: PASSED with 46.73x speedup vs. mathematical reference
+[15:23:17] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 81955b1e-086f-49c1-9f40-a18a5aaf509d: PASSED with 81.30x speedup vs. mathematical reference
+[15:23:17] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 81955b1e-086f-49c1-9f40-a18a5aaf509d: PASSED with 46.86x speedup vs. mathematical reference
+[15:23:33] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload 76010cb4-f73c-4145-8365-8642a2ce99de: PASSED with 84.70x speedup vs. mathematical reference
+[15:23:33] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload 76010cb4-f73c-4145-8365-8642a2ce99de: PASSED with 48.08x speedup vs. mathematical reference
+[15:23:49] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload fc378037-e8fa-4305-b00f-4af47933fd53: PASSED with 82.11x speedup vs. mathematical reference
+[15:23:49] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload fc378037-e8fa-4305-b00f-4af47933fd53: PASSED with 47.43x speedup vs. mathematical reference
+[15:24:04] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_moe_fp8_iter4' for workload f7d6ac7c-24ec-47e4-aefc-4863a5e3e1d9: PASSED with 95.00x speedup vs. mathematical reference
+[15:24:04] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_9sdjf3' for workload f7d6ac7c-24ec-47e4-aefc-4863a5e3e1d9: PASSED with 48.81x speedup vs. mathematical reference
+[15:24:04] INFO flashinfer_bench.bench.benchmark: Saved 38 traces for definition moe_fp8_block_scale_ds_routing_topk8_ng8_kg4_e32_h7168_i2048
+[15:24:04] INFO flashinfer_bench.cli.main: Benchmark run complete. Results saved.
+
+summary:
+  ako4x_moe_fp8_iter4 b8f4f012 status=PASSED latency_ms=0.087851 ref_speedup=146.344447
+  ako4x_moe_fp8_iter4 e05c6c03 status=PASSED latency_ms=0.191253 ref_speedup=61.472212
+  ako4x_moe_fp8_iter4 6230e838 status=PASSED latency_ms=0.186457 ref_speedup=86.932278
+  ako4x_moe_fp8_iter4 8f1ff9f1 status=PASSED latency_ms=0.242735 ref_speedup=74.534848
+  ako4x_moe_fp8_iter4 1a4c6ba1 status=PASSED latency_ms=0.343894 ref_speedup=61.629419
+  ako4x_moe_fp8_iter4 a7c2bcfd status=PASSED latency_ms=0.128093 ref_speedup=111.112963
+  ako4x_moe_fp8_iter4 2e69caee status=PASSED latency_ms=0.080198 ref_speedup=153.945244
+  ako4x_moe_fp8_iter4 8cba5890 status=PASSED latency_ms=0.121313 ref_speedup=115.140638
+  ako4x_moe_fp8_iter4 5e8dc11c status=PASSED latency_ms=2.180308 ref_speedup=21.354367
+  ako4x_moe_fp8_iter4 58a34f27 status=PASSED latency_ms=1.620147 ref_speedup=22.820124
+  ako4x_moe_fp8_iter4 5eadab1e status=PASSED latency_ms=0.171360 ref_speedup=90.045855
+  ako4x_moe_fp8_iter4 eedc63b2 status=PASSED latency_ms=0.176277 ref_speedup=88.970176
+  ako4x_moe_fp8_iter4 e626d3e6 status=PASSED latency_ms=0.218901 ref_speedup=79.859611
+  ako4x_moe_fp8_iter4 74d7ff04 status=PASSED latency_ms=0.211221 ref_speedup=81.177208
+  ako4x_moe_fp8_iter4 4822167c status=PASSED latency_ms=0.217044 ref_speedup=79.503791
+  ako4x_moe_fp8_iter4 81955b1e status=PASSED latency_ms=0.206530 ref_speedup=81.304741
+  ako4x_moe_fp8_iter4 76010cb4 status=PASSED latency_ms=0.195563 ref_speedup=84.696244
+  ako4x_moe_fp8_iter4 fc378037 status=PASSED latency_ms=0.205834 ref_speedup=82.108685
+  ako4x_moe_fp8_iter4 f7d6ac7c status=PASSED latency_ms=0.158720 ref_speedup=95.002503
+  flashinfer_wrapper_9sdjf3 b8f4f012 status=PASSED latency_ms=0.237356 ref_speedup=54.165384
+  flashinfer_wrapper_9sdjf3 e05c6c03 status=PASSED latency_ms=0.204571 ref_speedup=57.470243
+  flashinfer_wrapper_9sdjf3 6230e838 status=PASSED latency_ms=0.340016 ref_speedup=47.671627
+  flashinfer_wrapper_9sdjf3 8f1ff9f1 status=PASSED latency_ms=0.394262 ref_speedup=45.888848
+  flashinfer_wrapper_9sdjf3 1a4c6ba1 status=PASSED latency_ms=0.494643 ref_speedup=42.846996
+  flashinfer_wrapper_9sdjf3 a7c2bcfd status=PASSED latency_ms=0.278553 ref_speedup=51.095687
+  flashinfer_wrapper_9sdjf3 2e69caee status=PASSED latency_ms=0.231242 ref_speedup=53.390241
+  flashinfer_wrapper_9sdjf3 8cba5890 status=PASSED latency_ms=0.272392 ref_speedup=51.279034
+  flashinfer_wrapper_9sdjf3 5e8dc11c status=PASSED latency_ms=2.458689 ref_speedup=18.936548
+  flashinfer_wrapper_9sdjf3 58a34f27 status=PASSED latency_ms=1.834245 ref_speedup=20.156494
+  flashinfer_wrapper_9sdjf3 5eadab1e status=PASSED latency_ms=0.322040 ref_speedup=47.914100
+  flashinfer_wrapper_9sdjf3 eedc63b2 status=PASSED latency_ms=0.325067 ref_speedup=48.246726
+  flashinfer_wrapper_9sdjf3 e626d3e6 status=PASSED latency_ms=0.367109 ref_speedup=47.618880
+  flashinfer_wrapper_9sdjf3 74d7ff04 status=PASSED latency_ms=0.362926 ref_speedup=47.244778
+  flashinfer_wrapper_9sdjf3 4822167c status=PASSED latency_ms=0.369253 ref_speedup=46.731710
+  flashinfer_wrapper_9sdjf3 81955b1e status=PASSED latency_ms=0.358348 ref_speedup=46.859034
+  flashinfer_wrapper_9sdjf3 76010cb4 status=PASSED latency_ms=0.344467 ref_speedup=48.084098
+  flashinfer_wrapper_9sdjf3 fc378037 status=PASSED latency_ms=0.356363 ref_speedup=47.425783
+  flashinfer_wrapper_9sdjf3 f7d6ac7c status=PASSED latency_ms=0.308925 ref_speedup=48.810673
+  official_pair 1a4c6ba1 baseline_ms=0.494643 ours_ms=0.343894 speedup=1.438360 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 2e69caee baseline_ms=0.231242 ours_ms=0.080198 speedup=2.883397 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 4822167c baseline_ms=0.369253 ours_ms=0.217044 speedup=1.701281 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 58a34f27 baseline_ms=1.834245 ours_ms=1.620147 speedup=1.132148 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 5e8dc11c baseline_ms=2.458689 ours_ms=2.180308 speedup=1.127680 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 5eadab1e baseline_ms=0.322040 ours_ms=0.171360 speedup=1.879319 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 6230e838 baseline_ms=0.340016 ours_ms=0.186457 speedup=1.823564 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 74d7ff04 baseline_ms=0.362926 ours_ms=0.211221 speedup=1.718226 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 76010cb4 baseline_ms=0.344467 ours_ms=0.195563 speedup=1.761419 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 81955b1e baseline_ms=0.358348 ours_ms=0.206530 speedup=1.735092 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 8cba5890 baseline_ms=0.272392 ours_ms=0.121313 speedup=2.245375 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair 8f1ff9f1 baseline_ms=0.394262 ours_ms=0.242735 speedup=1.624248 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair a7c2bcfd baseline_ms=0.278553 ours_ms=0.128093 speedup=2.174606 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair b8f4f012 baseline_ms=0.237356 ours_ms=0.087851 speedup=2.701808 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair e05c6c03 baseline_ms=0.204571 ours_ms=0.191253 speedup=1.069636 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair e626d3e6 baseline_ms=0.367109 ours_ms=0.218901 speedup=1.677058 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair eedc63b2 baseline_ms=0.325067 ours_ms=0.176277 speedup=1.844067 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair f7d6ac7c baseline_ms=0.308925 ours_ms=0.158720 speedup=1.946347 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair fc378037 baseline_ms=0.356363 ours_ms=0.205834 speedup=1.731309 baseline_source=measured baseline_status=PASSED ours_status=PASSED
+  official_pair_avg_speedup=1.800786
+  get_author_score avg_speedup=1.800786 definitions=1 workloads=19 success_rate=1.000000 win_rate=1.000000
+Stopping app - local entrypoint completed.
+✓ App completed. View run at https://modal.com/apps/hanlinfax/main/ap-N9Ghc3wKrnpHPSUuBAf446

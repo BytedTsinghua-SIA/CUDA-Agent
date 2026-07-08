@@ -1,0 +1,6 @@
+.venv/
+.hf_cache/
+.hf_home/
+.hf_xet/
+__pycache__/
+*.pyc

@@ -1,0 +1,4 @@
+logs/
+.venv_cuda13/
+__pycache__/
+contest_data/

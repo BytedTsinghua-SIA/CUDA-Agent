@@ -1,0 +1,160 @@
+✓ Initialized. View run at 
+https://modal.com/apps/hanlinfax/main/ap-btgQun41px4jOBs1u3D3sl
+✓ Created objects.
+├── 🔨 Created mount 
+│   /opt/tiger/CUDA-Agent/flashinfer_contest_results/dsa/sparse_mla/run_modal_of
+│   ficial_cli.py
+├── 🔨 Created mount 
+│   /opt/tiger/CUDA-Agent/flashinfer_contest_results/dsa/sparse_mla/kernel_ako4x
+│   _hybrid_pdl_v2.py
+├── 🔨 Created mount 
+│   /opt/tiger/CUDA-Agent/flashinfer_contest_results/dsa/sparse_mla/kernel.py
+├── 🔨 Created mount 
+│   /opt/tiger/CUDA-Agent/flashinfer_contest_results/dsa/sparse_mla/contest_data
+├── 🔨 Created function probe_env.
+└── 🔨 Created function run_official_cli.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.2.0
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+running: flashinfer-bench run --local /tmp/dsa_sparse_official_cli_dataset --definitions dsa_sparse_attention_h16_ckv512_kpe64_topk2048_ps64 --solutions ako4x_dsa_sparse_hybrid_pdl_v2 flashinfer_wrapper_5af199 --save-results --use-isolated-runner --log-level INFO --resume --timeout 7200 --warmup-runs 10 --iterations 50 --num-trials 3
+[10:46:02] INFO flashinfer_bench.bench.runner.isolated_runner: Initialized benchmark multi-process on 1 CUDA devices and 1 workers
+[10:46:02] INFO flashinfer_bench.cli.main: Running benchmark on FlashInfer Trace Dataset: /tmp/dsa_sparse_official_cli_dataset
+[10:46:02] INFO flashinfer_bench.cli.main: Resume mode enabled: will skip already evaluated solutions
+[10:46:02] INFO flashinfer_bench.bench.benchmark: Processing definition: dsa_sparse_attention_h16_ckv512_kpe64_topk2048_ps64 with 2 solutions
+[heartbeat] still running; no output for 30s
+[10:46:42] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 0c23b10c7b7645719517828c12eaa1d2: PASSED with 185.25x speedup vs. mathematical reference
+[10:46:42] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 0c23b10c7b7645719517828c12eaa1d2: PASSED with 4.46x speedup vs. mathematical reference
+[10:46:54] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 9d4a5f21268e484ea05a2f2af91d9fa7: PASSED with 226.97x speedup vs. mathematical reference
+[10:46:54] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 9d4a5f21268e484ea05a2f2af91d9fa7: PASSED with 5.67x speedup vs. mathematical reference
+[10:47:05] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload b7668cfd194c4b95ab600feb205ebac6: PASSED with 212.69x speedup vs. mathematical reference
+[10:47:05] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload b7668cfd194c4b95ab600feb205ebac6: PASSED with 5.77x speedup vs. mathematical reference
+[10:47:15] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 0a63b87bb2e54e9db1ca3c4c53a1d521: PASSED with 205.27x speedup vs. mathematical reference
+[10:47:15] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 0a63b87bb2e54e9db1ca3c4c53a1d521: PASSED with 5.73x speedup vs. mathematical reference
+[10:47:27] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 05f6de657db543ae9e4c46796522843a: PASSED with 206.23x speedup vs. mathematical reference
+[10:47:27] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 05f6de657db543ae9e4c46796522843a: PASSED with 5.85x speedup vs. mathematical reference
+[10:47:38] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload fc85411e250c41879b6d6a1edb80f0a7: PASSED with 224.80x speedup vs. mathematical reference
+[10:47:38] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload fc85411e250c41879b6d6a1edb80f0a7: PASSED with 5.76x speedup vs. mathematical reference
+[10:47:48] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload e6b849f2900446148c01d81152efae23: PASSED with 207.15x speedup vs. mathematical reference
+[10:47:48] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload e6b849f2900446148c01d81152efae23: PASSED with 5.77x speedup vs. mathematical reference
+[10:48:00] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 9f3f891bfbe24776adfcd5a579d093dd: PASSED with 200.17x speedup vs. mathematical reference
+[10:48:00] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 9f3f891bfbe24776adfcd5a579d093dd: PASSED with 5.65x speedup vs. mathematical reference
+[10:48:12] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload f77df5ce21634f7ca0586af7e3c13434: PASSED with 225.47x speedup vs. mathematical reference
+[10:48:12] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload f77df5ce21634f7ca0586af7e3c13434: PASSED with 5.69x speedup vs. mathematical reference
+[10:48:36] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 385742b2717e4f02b918c7349dde23d8: PASSED with 371.32x speedup vs. mathematical reference
+[10:48:36] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 385742b2717e4f02b918c7349dde23d8: PASSED with 13.61x speedup vs. mathematical reference
+[10:48:53] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 4c46a94ba2364dc7ab476286dee8dce3: PASSED with 365.84x speedup vs. mathematical reference
+[10:48:53] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 4c46a94ba2364dc7ab476286dee8dce3: PASSED with 13.47x speedup vs. mathematical reference
+[10:49:08] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 3838996164a94d728710f913477feba8: PASSED with 333.45x speedup vs. mathematical reference
+[10:49:08] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 3838996164a94d728710f913477feba8: PASSED with 11.92x speedup vs. mathematical reference
+[10:49:24] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 02d6ae9c64ab42ff93f05c23c53bcb7d: PASSED with 360.79x speedup vs. mathematical reference
+[10:49:24] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 02d6ae9c64ab42ff93f05c23c53bcb7d: PASSED with 13.14x speedup vs. mathematical reference
+[10:49:39] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload ddfa9e340b264f76abe7418692faa876: PASSED with 293.06x speedup vs. mathematical reference
+[10:49:39] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload ddfa9e340b264f76abe7418692faa876: PASSED with 10.85x speedup vs. mathematical reference
+[10:49:56] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 78b2e11c30004cceb84355722a7c6b0a: PASSED with 366.74x speedup vs. mathematical reference
+[10:49:56] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 78b2e11c30004cceb84355722a7c6b0a: PASSED with 13.54x speedup vs. mathematical reference
+[10:50:12] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 68d6817dcfd1433aa8d2ddeefd54b6ea: PASSED with 310.39x speedup vs. mathematical reference
+[10:50:12] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 68d6817dcfd1433aa8d2ddeefd54b6ea: PASSED with 11.26x speedup vs. mathematical reference
+[10:50:28] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 564007ac354e4662a62cc4d6352dc494: PASSED with 351.66x speedup vs. mathematical reference
+[10:50:28] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 564007ac354e4662a62cc4d6352dc494: PASSED with 13.39x speedup vs. mathematical reference
+[10:50:46] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload ae4219a95f044f45bd10e17ab63c6e8f: PASSED with 325.56x speedup vs. mathematical reference
+[10:50:46] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload ae4219a95f044f45bd10e17ab63c6e8f: PASSED with 12.14x speedup vs. mathematical reference
+[10:51:02] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 232ed014bafc4835b9881bb308c659b0: PASSED with 383.74x speedup vs. mathematical reference
+[10:51:02] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 232ed014bafc4835b9881bb308c659b0: PASSED with 14.10x speedup vs. mathematical reference
+[10:51:18] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 7a389715dcc3479e9b0512309f9d1d56: PASSED with 368.85x speedup vs. mathematical reference
+[10:51:18] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 7a389715dcc3479e9b0512309f9d1d56: PASSED with 13.35x speedup vs. mathematical reference
+[10:51:35] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 5096e459ce3f4cdf82773ce1a0c73c8a: PASSED with 350.98x speedup vs. mathematical reference
+[10:51:35] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 5096e459ce3f4cdf82773ce1a0c73c8a: PASSED with 13.41x speedup vs. mathematical reference
+[10:51:50] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload d57eb9e19f0642e8af9bd76ad0823303: PASSED with 296.35x speedup vs. mathematical reference
+[10:51:50] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload d57eb9e19f0642e8af9bd76ad0823303: PASSED with 11.06x speedup vs. mathematical reference
+[10:52:05] INFO flashinfer_bench.bench.benchmark: Solution 'ako4x_dsa_sparse_hybrid_pdl_v2' for workload 2207f0fdc96347c59d106e4976cfad57: PASSED with 332.37x speedup vs. mathematical reference
+[10:52:05] INFO flashinfer_bench.bench.benchmark: Solution 'flashinfer_wrapper_5af199' for workload 2207f0fdc96347c59d106e4976cfad57: PASSED with 12.37x speedup vs. mathematical reference
+[10:52:05] INFO flashinfer_bench.bench.benchmark: Saved 46 traces for definition dsa_sparse_attention_h16_ckv512_kpe64_topk2048_ps64
+[10:52:05] INFO flashinfer_bench.cli.main: Benchmark run complete. Results saved.
+
+summary:
+  ako4x_dsa_sparse_hybrid_pdl_v2 0c23b10c status=PASSED latency_ms=0.006629 ref_speedup=185.247750
+  ako4x_dsa_sparse_hybrid_pdl_v2 9d4a5f21 status=PASSED latency_ms=0.007043 ref_speedup=226.969379
+  ako4x_dsa_sparse_hybrid_pdl_v2 b7668cfd status=PASSED latency_ms=0.007513 ref_speedup=212.691536
+  ako4x_dsa_sparse_hybrid_pdl_v2 0a63b87b status=PASSED latency_ms=0.007765 ref_speedup=205.271576
+  ako4x_dsa_sparse_hybrid_pdl_v2 05f6de65 status=PASSED latency_ms=0.008052 ref_speedup=206.227155
+  ako4x_dsa_sparse_hybrid_pdl_v2 fc85411e status=PASSED latency_ms=0.007106 ref_speedup=224.799855
+  ako4x_dsa_sparse_hybrid_pdl_v2 e6b849f2 status=PASSED latency_ms=0.007711 ref_speedup=207.147445
+  ako4x_dsa_sparse_hybrid_pdl_v2 9f3f891b status=PASSED latency_ms=0.008037 ref_speedup=200.169563
+  ako4x_dsa_sparse_hybrid_pdl_v2 f77df5ce status=PASSED latency_ms=0.007103 ref_speedup=225.472312
+  ako4x_dsa_sparse_hybrid_pdl_v2 385742b2 status=PASSED latency_ms=0.010584 ref_speedup=371.318478
+  ako4x_dsa_sparse_hybrid_pdl_v2 4c46a94b status=PASSED latency_ms=0.010582 ref_speedup=365.844666
+  ako4x_dsa_sparse_hybrid_pdl_v2 38389961 status=PASSED latency_ms=0.010591 ref_speedup=333.448108
+  ako4x_dsa_sparse_hybrid_pdl_v2 02d6ae9c status=PASSED latency_ms=0.010676 ref_speedup=360.787620
+  ako4x_dsa_sparse_hybrid_pdl_v2 ddfa9e34 status=PASSED latency_ms=0.010667 ref_speedup=293.063517
+  ako4x_dsa_sparse_hybrid_pdl_v2 78b2e11c status=PASSED latency_ms=0.010816 ref_speedup=366.738339
+  ako4x_dsa_sparse_hybrid_pdl_v2 68d6817d status=PASSED latency_ms=0.010082 ref_speedup=310.388630
+  ako4x_dsa_sparse_hybrid_pdl_v2 564007ac status=PASSED latency_ms=0.011185 ref_speedup=351.660304
+  ako4x_dsa_sparse_hybrid_pdl_v2 ae4219a9 status=PASSED latency_ms=0.010773 ref_speedup=325.555471
+  ako4x_dsa_sparse_hybrid_pdl_v2 232ed014 status=PASSED latency_ms=0.010658 ref_speedup=383.736235
+  ako4x_dsa_sparse_hybrid_pdl_v2 7a389715 status=PASSED latency_ms=0.010661 ref_speedup=368.852848
+  ako4x_dsa_sparse_hybrid_pdl_v2 5096e459 status=PASSED latency_ms=0.011136 ref_speedup=350.984001
+  ako4x_dsa_sparse_hybrid_pdl_v2 d57eb9e1 status=PASSED latency_ms=0.010768 ref_speedup=296.350256
+  ako4x_dsa_sparse_hybrid_pdl_v2 2207f0fd status=PASSED latency_ms=0.010807 ref_speedup=332.367359
+  flashinfer_wrapper_5af199 0c23b10c status=PASSED latency_ms=0.275487 ref_speedup=4.457595
+  flashinfer_wrapper_5af199 9d4a5f21 status=PASSED latency_ms=0.281796 ref_speedup=5.672845
+  flashinfer_wrapper_5af199 b7668cfd status=PASSED latency_ms=0.276691 ref_speedup=5.774833
+  flashinfer_wrapper_5af199 0a63b87b status=PASSED latency_ms=0.278334 ref_speedup=5.726828
+  flashinfer_wrapper_5af199 05f6de65 status=PASSED latency_ms=0.283817 ref_speedup=5.851102
+  flashinfer_wrapper_5af199 fc85411e status=PASSED latency_ms=0.277491 ref_speedup=5.756420
+  flashinfer_wrapper_5af199 e6b849f2 status=PASSED latency_ms=0.276796 ref_speedup=5.770979
+  flashinfer_wrapper_5af199 9f3f891b status=PASSED latency_ms=0.284558 ref_speedup=5.653777
+  flashinfer_wrapper_5af199 f77df5ce status=PASSED latency_ms=0.281620 ref_speedup=5.686847
+  flashinfer_wrapper_5af199 385742b2 status=PASSED latency_ms=0.288830 ref_speedup=13.606312
+  flashinfer_wrapper_5af199 4c46a94b status=PASSED latency_ms=0.287325 ref_speedup=13.473178
+  flashinfer_wrapper_5af199 38389961 status=PASSED latency_ms=0.296247 ref_speedup=11.920773
+  flashinfer_wrapper_5af199 02d6ae9c status=PASSED latency_ms=0.293230 ref_speedup=13.135444
+  flashinfer_wrapper_5af199 ddfa9e34 status=PASSED latency_ms=0.288184 ref_speedup=10.847098
+  flashinfer_wrapper_5af199 78b2e11c status=PASSED latency_ms=0.293028 ref_speedup=13.536919
+  flashinfer_wrapper_5af199 68d6817d status=PASSED latency_ms=0.277970 ref_speedup=11.257820
+  flashinfer_wrapper_5af199 564007ac status=PASSED latency_ms=0.293783 ref_speedup=13.388516
+  flashinfer_wrapper_5af199 ae4219a9 status=PASSED latency_ms=0.288867 ref_speedup=12.141078
+  flashinfer_wrapper_5af199 232ed014 status=PASSED latency_ms=0.289973 ref_speedup=14.104085
+  flashinfer_wrapper_5af199 7a389715 status=PASSED latency_ms=0.294469 ref_speedup=13.354429
+  flashinfer_wrapper_5af199 5096e459 status=PASSED latency_ms=0.291518 ref_speedup=13.407611
+  flashinfer_wrapper_5af199 d57eb9e1 status=PASSED latency_ms=0.288394 ref_speedup=11.064898
+  flashinfer_wrapper_5af199 2207f0fd status=PASSED latency_ms=0.290493 ref_speedup=12.365217
+  official_pair 02d6ae9c baseline_ms=0.293230 solution_ms=0.010676 speedup=27.466724 baseline_status=PASSED solution_status=PASSED
+  official_pair 05f6de65 baseline_ms=0.283817 solution_ms=0.008052 speedup=35.245866 baseline_status=PASSED solution_status=PASSED
+  official_pair 0a63b87b baseline_ms=0.278334 solution_ms=0.007765 speedup=35.843854 baseline_status=PASSED solution_status=PASSED
+  official_pair 0c23b10c baseline_ms=0.275487 solution_ms=0.006629 speedup=41.557776 baseline_status=PASSED solution_status=PASSED
+  official_pair 2207f0fd baseline_ms=0.290493 solution_ms=0.010807 speedup=26.879218 baseline_status=PASSED solution_status=PASSED
+  official_pair 232ed014 baseline_ms=0.289973 solution_ms=0.010658 speedup=27.207453 baseline_status=PASSED solution_status=PASSED
+  official_pair 38389961 baseline_ms=0.296247 solution_ms=0.010591 speedup=27.972020 baseline_status=PASSED solution_status=PASSED
+  official_pair 385742b2 baseline_ms=0.288830 solution_ms=0.010584 speedup=27.290164 baseline_status=PASSED solution_status=PASSED
+  official_pair 4c46a94b baseline_ms=0.287325 solution_ms=0.010582 speedup=27.153554 baseline_status=PASSED solution_status=PASSED
+  official_pair 5096e459 baseline_ms=0.291518 solution_ms=0.011136 speedup=26.177966 baseline_status=PASSED solution_status=PASSED
+  official_pair 564007ac baseline_ms=0.293783 solution_ms=0.011185 speedup=26.265817 baseline_status=PASSED solution_status=PASSED
+  official_pair 68d6817d baseline_ms=0.277970 solution_ms=0.010082 speedup=27.570935 baseline_status=PASSED solution_status=PASSED
+  official_pair 78b2e11c baseline_ms=0.293028 solution_ms=0.010816 speedup=27.091715 baseline_status=PASSED solution_status=PASSED
+  official_pair 7a389715 baseline_ms=0.294469 solution_ms=0.010661 speedup=27.620263 baseline_status=PASSED solution_status=PASSED
+  official_pair 9d4a5f21 baseline_ms=0.281796 solution_ms=0.007043 speedup=40.009797 baseline_status=PASSED solution_status=PASSED
+  official_pair 9f3f891b baseline_ms=0.284558 solution_ms=0.008037 speedup=35.404570 baseline_status=PASSED solution_status=PASSED
+  official_pair ae4219a9 baseline_ms=0.288867 solution_ms=0.010773 speedup=26.814379 baseline_status=PASSED solution_status=PASSED
+  official_pair b7668cfd baseline_ms=0.276691 solution_ms=0.007513 speedup=36.830771 baseline_status=PASSED solution_status=PASSED
+  official_pair d57eb9e1 baseline_ms=0.288394 solution_ms=0.010768 speedup=26.782918 baseline_status=PASSED solution_status=PASSED
+  official_pair ddfa9e34 baseline_ms=0.288184 solution_ms=0.010667 speedup=27.017688 baseline_status=PASSED solution_status=PASSED
+  official_pair e6b849f2 baseline_ms=0.276796 solution_ms=0.007711 speedup=35.894679 baseline_status=PASSED solution_status=PASSED
+  official_pair f77df5ce baseline_ms=0.281620 solution_ms=0.007103 speedup=39.648036 baseline_status=PASSED solution_status=PASSED
+  official_pair fc85411e baseline_ms=0.277491 solution_ms=0.007106 speedup=39.052024 baseline_status=PASSED solution_status=PASSED
+  official_pair_avg_speedup=31.252095
+  get_author_score avg_speedup=31.252095 definitions=1 workloads=23 success_rate=1.000000 win_rate=1.000000
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/hanlinfax/main/ap-btgQun41px4jOBs1u3D3sl
